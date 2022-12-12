@@ -13,10 +13,10 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<Public />} />
         <Route path="login" element={<Login />} />
-        
+
         <Route path="dash" element={<Dashlayout />}>
           <Route index element={<Welcome />} />
-          <Route path="/users" element={<UsersList />} />
+          <Route path="users" element={<UsersList />} />
           <Route path="notes">
             <Route index element={<NotesList />} />
           </Route>
